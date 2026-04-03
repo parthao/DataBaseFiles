@@ -413,60 +413,6 @@
         <mxCell id="_Fxfctq9M9R6dRsGJUei-236" edge="1" parent="_Fxfctq9M9R6dRsGJUei-237" source="_Fxfctq9M9R6dRsGJUei-219" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_Fxfctq9M9R6dRsGJUei-231" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-256" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLastChild=0;collapsible=1;marginBottom=0;html=1;" value="StudentStatuses" vertex="1">
-          <mxGeometry height="104" width="200" x="1510" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-257" parent="_Fxfctq9M9R6dRsGJUei-256" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ StatusId : INT [PK]" vertex="1">
-          <mxGeometry height="26" width="200" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-258" parent="_Fxfctq9M9R6dRsGJUei-256" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Name / Code : NVARCHAR" vertex="1">
-          <mxGeometry height="26" width="200" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-259" parent="_Fxfctq9M9R6dRsGJUei-256" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ IsActive : BIT" vertex="1">
-          <mxGeometry height="26" width="200" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-264" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLastChild=0;collapsible=1;marginBottom=0;html=1;" value="Students" vertex="1">
-          <mxGeometry height="364" width="240" x="980" y="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-265" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ StudentId : BIGINT [PK]" vertex="1">
-          <mxGeometry height="26" width="240" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-266" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ UserId : BIGINT [FK]" vertex="1">
-          <mxGeometry height="26" width="240" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-267" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ InstitutionId : BIGINT [FK]" vertex="1">
-          <mxGeometry height="26" width="240" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-268" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ StatusId : INT [FK]" vertex="1">
-          <mxGeometry height="26" width="240" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-269" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ ClassId : BIGINT [FK]" vertex="1">
-          <mxGeometry height="26" width="240" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-270" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ AdmissionNo / RollNo : NVARCHAR" vertex="1">
-          <mxGeometry height="26" width="240" y="156" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-271" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=#eeeeee;align=center;verticalAlign=top;fontStyle=2;whiteSpace=wrap;html=1;" value="-- Personal Info --" vertex="1">
-          <mxGeometry height="26" width="240" y="182" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-272" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ DOB / Gender / Nationality" vertex="1">
-          <mxGeometry height="26" width="240" y="208" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-273" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ BloodGroup : NVARCHAR(10)" vertex="1">
-          <mxGeometry height="26" width="240" y="234" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-274" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=#eeeeee;align=center;verticalAlign=top;fontStyle=2;whiteSpace=wrap;html=1;" value="-- Audit &amp; Status --" vertex="1">
-          <mxGeometry height="26" width="240" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-275" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ Created/Updated At/By" vertex="1">
-          <mxGeometry height="26" width="240" y="286" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-276" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ IsDeleted / DeletedAt" vertex="1">
-          <mxGeometry height="26" width="240" y="312" as="geometry" />
-        </mxCell>
-        <mxCell id="_Fxfctq9M9R6dRsGJUei-277" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ AdmissionDate : DATE" vertex="1">
-          <mxGeometry height="26" width="240" y="338" as="geometry" />
-        </mxCell>
         <mxCell id="_Fxfctq9M9R6dRsGJUei-278" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Student Enrollment" vertex="1">
           <mxGeometry height="250" width="780" x="1360" y="510" as="geometry" />
         </mxCell>
@@ -519,6 +465,72 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_Fxfctq9M9R6dRsGJUei-255" edge="1" parent="_Fxfctq9M9R6dRsGJUei-278" source="_Fxfctq9M9R6dRsGJUei-244" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_Fxfctq9M9R6dRsGJUei-251" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-279" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Student System" vertex="1">
+          <mxGeometry height="406" width="639" x="950" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-256" parent="_Fxfctq9M9R6dRsGJUei-279" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLastChild=0;collapsible=1;marginBottom=0;html=1;" value="StudentStatuses" vertex="1">
+          <mxGeometry height="104" width="200" x="359.5" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-257" parent="_Fxfctq9M9R6dRsGJUei-256" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ StatusId : INT [PK]" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-258" parent="_Fxfctq9M9R6dRsGJUei-256" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Name / Code : NVARCHAR" vertex="1">
+          <mxGeometry height="26" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-259" parent="_Fxfctq9M9R6dRsGJUei-256" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ IsActive : BIT" vertex="1">
+          <mxGeometry height="26" width="200" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-264" parent="_Fxfctq9M9R6dRsGJUei-279" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLastChild=0;collapsible=1;marginBottom=0;html=1;" value="Students" vertex="1">
+          <mxGeometry height="364" width="240" x="79.5" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-265" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ StudentId : BIGINT [PK]" vertex="1">
+          <mxGeometry height="26" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-266" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ UserId : BIGINT [FK]" vertex="1">
+          <mxGeometry height="26" width="240" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-267" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ InstitutionId : BIGINT [FK]" vertex="1">
+          <mxGeometry height="26" width="240" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-268" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ StatusId : INT [FK]" vertex="1">
+          <mxGeometry height="26" width="240" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-269" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ ClassId : BIGINT [FK]" vertex="1">
+          <mxGeometry height="26" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-270" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ AdmissionNo / RollNo : NVARCHAR" vertex="1">
+          <mxGeometry height="26" width="240" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-271" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=#eeeeee;align=center;verticalAlign=top;fontStyle=2;whiteSpace=wrap;html=1;" value="-- Personal Info --" vertex="1">
+          <mxGeometry height="26" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-272" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ DOB / Gender / Nationality" vertex="1">
+          <mxGeometry height="26" width="240" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-273" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ BloodGroup : NVARCHAR(10)" vertex="1">
+          <mxGeometry height="26" width="240" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-274" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=#eeeeee;align=center;verticalAlign=top;fontStyle=2;whiteSpace=wrap;html=1;" value="-- Audit &amp; Status --" vertex="1">
+          <mxGeometry height="26" width="240" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-275" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ Created/Updated At/By" vertex="1">
+          <mxGeometry height="26" width="240" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-276" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ IsDeleted / DeletedAt" vertex="1">
+          <mxGeometry height="26" width="240" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-277" parent="_Fxfctq9M9R6dRsGJUei-264" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;html=1;" value="+ AdmissionDate : DATE" vertex="1">
+          <mxGeometry height="26" width="240" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-281" edge="1" parent="_Fxfctq9M9R6dRsGJUei-279" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290.00000000000045" y="232.0000000000001" as="sourcePoint" />
+            <mxPoint x="290.00000000000045" y="231.53846153846155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-280" edge="1" parent="_Fxfctq9M9R6dRsGJUei-279" source="_Fxfctq9M9R6dRsGJUei-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="_Fxfctq9M9R6dRsGJUei-268">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
