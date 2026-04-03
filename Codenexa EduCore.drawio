@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="EduCore Advanced ERD" id="fIokKBAQL66cTIn2asQn">
-    <mxGraphModel dx="1859" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2117" dy="695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -696,6 +696,83 @@
               <mxPoint x="130" y="1170" />
               <mxPoint x="-470" y="1170" />
               <mxPoint x="-470" y="1331" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-393" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Exam System" vertex="1">
+          <mxGeometry height="400" width="870" x="170" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-369" parent="_Fxfctq9M9R6dRsGJUei-393" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLastChild=0;collapsible=1;marginBottom=0;html=1;" value="ExamTypes" vertex="1">
+          <mxGeometry height="104" width="200" x="10" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-370" parent="_Fxfctq9M9R6dRsGJUei-369" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ExamTypeId : INT [PK]" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-371" parent="_Fxfctq9M9R6dRsGJUei-369" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Name / Code : NVARCHAR" vertex="1">
+          <mxGeometry height="26" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-372" parent="_Fxfctq9M9R6dRsGJUei-369" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ IsActive : BIT" vertex="1">
+          <mxGeometry height="26" width="200" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-373" parent="_Fxfctq9M9R6dRsGJUei-393" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLastChild=0;collapsible=1;marginBottom=0;html=1;" value="Exams" vertex="1">
+          <mxGeometry height="156" width="220" x="270" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-374" parent="_Fxfctq9M9R6dRsGJUei-373" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ExamId : BIGINT [PK]" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-375" parent="_Fxfctq9M9R6dRsGJUei-373" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ CourseId / ExamTypeId [FK]" vertex="1">
+          <mxGeometry height="26" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-376" parent="_Fxfctq9M9R6dRsGJUei-373" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Name : NVARCHAR(100)" vertex="1">
+          <mxGeometry height="26" width="220" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-377" parent="_Fxfctq9M9R6dRsGJUei-373" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ StartDate / EndDate : DATE" vertex="1">
+          <mxGeometry height="26" width="220" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-378" parent="_Fxfctq9M9R6dRsGJUei-373" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ CreatedAt : DATETIME" vertex="1">
+          <mxGeometry height="26" width="220" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-379" parent="_Fxfctq9M9R6dRsGJUei-393" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLastChild=0;collapsible=1;marginBottom=0;html=1;" value="ExamSubjects" vertex="1">
+          <mxGeometry height="130" width="200" x="550" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-380" parent="_Fxfctq9M9R6dRsGJUei-379" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ExamSubjectId : BIGINT [PK]" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-381" parent="_Fxfctq9M9R6dRsGJUei-379" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ExamId / SubjectId [FK]" vertex="1">
+          <mxGeometry height="26" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-382" parent="_Fxfctq9M9R6dRsGJUei-379" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ MaxMarks : INT" vertex="1">
+          <mxGeometry height="26" width="200" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-383" parent="_Fxfctq9M9R6dRsGJUei-379" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ PassingMarks : INT" vertex="1">
+          <mxGeometry height="26" width="200" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-384" parent="_Fxfctq9M9R6dRsGJUei-393" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLastChild=0;collapsible=1;marginBottom=0;html=1;" value="StudentResults" vertex="1">
+          <mxGeometry height="130" width="200" x="590" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-385" parent="_Fxfctq9M9R6dRsGJUei-384" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ResultId : BIGINT [PK]" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-386" parent="_Fxfctq9M9R6dRsGJUei-384" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ExamSubjectId / StudentId [FK]" vertex="1">
+          <mxGeometry height="26" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-387" parent="_Fxfctq9M9R6dRsGJUei-384" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ MarksObtained : DECIMAL" vertex="1">
+          <mxGeometry height="26" width="200" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-388" parent="_Fxfctq9M9R6dRsGJUei-384" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Grade / Remarks : NVARCHAR" vertex="1">
+          <mxGeometry height="26" width="200" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-389" edge="1" parent="_Fxfctq9M9R6dRsGJUei-393" source="_Fxfctq9M9R6dRsGJUei-375" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_Fxfctq9M9R6dRsGJUei-370" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-390" edge="1" parent="_Fxfctq9M9R6dRsGJUei-393" source="_Fxfctq9M9R6dRsGJUei-381" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_Fxfctq9M9R6dRsGJUei-374" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fxfctq9M9R6dRsGJUei-391" edge="1" parent="_Fxfctq9M9R6dRsGJUei-393" source="_Fxfctq9M9R6dRsGJUei-386" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.998;entryY=0.585;entryDx=0;entryDy=0;entryPerimeter=0;" target="_Fxfctq9M9R6dRsGJUei-380" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="301" />
+              <mxPoint x="830" y="97" />
             </Array>
           </mxGeometry>
         </mxCell>
